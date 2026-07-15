@@ -76,8 +76,9 @@ kılıyor. Her koşu temiz bir klasörde ve temiz bir session'da yapılıyor. Ö
 referans implementasyon yazıp paketin ona 71/71 verdiğini doğruladım; böylece
 düşük bir puan bozuk testi değil, gerçek bir kusuru gösterir.
 
-Her şey — spec, gizli paket, promptlar, ham metrikler — repo'da (link sonda).
-Mesele bu zaten: tekrar çalıştırıp beni denetleyebilirsin.
+Her şey — spec, gizli paket, promptlar, ham metrikler —
+[repo'da](https://github.com/zexy2/loop-engineering-experiment). Mesele bu
+zaten: tekrar çalıştırıp beni denetleyebilirsin.
 
 **Baştan bir bütçe itirafı:** Bunu standart bir planla yaptım, kurumsal bir
 token musluğuyla değil. Bu kısıt bulguları şekillendirdi, o yüzden onu
@@ -254,9 +255,12 @@ kaldıraç noktası kaydı, iş kolaylaşmadı. Bir spec yeterken loop'a uzanmak
 ## Tekrarla
 
 Tüm harness — spec, gizli 71-testlik paket, puanlayıcı, iki koşunun çıktısı, her
-ham metrik ve çalıştırılmamış iki koşu tasarımı — repo'da. Klonla, kendi ajanına
-yönelt ve bir loop kurmadan önce görevinin loop'a ihtiyacı olup olmadığını
-kontrol et.
+ham metrik ve çalıştırılmamış iki koşu tasarımı — burada:
+
+**→ https://github.com/zexy2/loop-engineering-experiment**
+
+Klonla, kendi ajanına yönelt ve bir loop kurmadan önce görevinin loop'a ihtiyacı
+olup olmadığını kontrol et.
 
 *Claude Code (Opus 4.8) ile inşa edildi ve ölçüldü. Buradan tek bir şey
 alacaksan: iç loop'u dış loop'tan ayır ve ilki işi çoktan bitirdiyse ikincisine

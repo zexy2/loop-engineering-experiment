@@ -75,8 +75,9 @@ tests it can read. Each run happens in a fresh directory and a fresh session. I
 wrote a reference implementation first and confirmed the suite gives it 71/71,
 so a low score would mean a real defect, not a broken test.
 
-Everything — spec, hidden suite, prompts, raw metrics — is in the repo (link at
-the end). That's the point: you can re-run it and check me.
+Everything — spec, hidden suite, prompts, raw metrics — is in the
+[repo](https://github.com/zexy2/loop-engineering-experiment). That's the point:
+you can re-run it and check me.
 
 **A budget confession up front:** I ran this on a standard plan, not an
 enterprise token faucet. That constraint ended up shaping the findings, so I'm
@@ -251,9 +252,12 @@ get the same 100%.
 ## Reproduce it
 
 The full harness — spec, the hidden 71-test suite, the scorer, both runs'
-output, every raw metric, and the two unrun run designs — is in the repo. Clone
-it, point it at your own agent, and check whether your task needs the loop at
-all before you build one.
+output, every raw metric, and the two unrun run designs — is here:
+
+**→ https://github.com/zexy2/loop-engineering-experiment**
+
+Clone it, point it at your own agent, and check whether your task needs the loop
+at all before you build one.
 
 *Built and measured with Claude Code (Opus 4.8). If you take one thing: separate
 the inner loop from the outer loop, and don't pay for the second when the first
