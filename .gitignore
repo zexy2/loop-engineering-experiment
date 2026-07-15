@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.harness-venv/
+harness/.venv/
+
+# Databases (runtime state)
+*.db
+
+# pytest
+.pytest_cache/
+
+# macOS
+.DS_Store
+
+# Server logs from scoring (regenerated)
+results/*-server.log

@@ -1,0 +1,8 @@
+{
+  "run": "run-C-goal",
+  "timestamp": "2026-07-15T19:45:11Z",
+  "server_started": true,
+  "phase1": {"passed": 67, "failed": 0},
+  "phase2_ratelimit": {"passed": 4, "failed": 0},
+  "total": {"passed": 71, "failed": 0, "pass_rate_pct": 100.0}
+}

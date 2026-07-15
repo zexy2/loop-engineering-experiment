@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="720" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="72" y="76" font-size="34" font-weight="700" fill="#1a1a2e">Same task, same score — the outer loop did nothing</text>
+  <text x="72" y="112" font-size="19" fill="#5a5a6e">One-shot vs. a goal-based loop on a 15-endpoint API, graded by a hidden 71-test suite the agent never saw</text>
+
+  <!-- ================= LEFT PANEL: Acceptance score ================= -->
+  <text x="72" y="188" font-size="20" font-weight="700" fill="#1a1a2e">Acceptance test pass rate</text>
+
+  <!-- axis baseline -->
+  <line x1="120" y1="560" x2="540" y2="560" stroke="#d4d4dd" stroke-width="2"/>
+  <!-- 100% gridline -->
+  <line x1="120" y1="240" x2="540" y2="240" stroke="#ececf2" stroke-width="1"/>
+  <text x="104" y="246" font-size="14" fill="#9a9aa8" text-anchor="end">100%</text>
+  <line x1="120" y1="400" x2="540" y2="400" stroke="#ececf2" stroke-width="1"/>
+  <text x="104" y="406" font-size="14" fill="#9a9aa8" text-anchor="end">50%</text>
+  <text x="104" y="566" font-size="14" fill="#9a9aa8" text-anchor="end">0%</text>
+
+  <!-- Run A bar (100% -> height 320, from y240 to y560) -->
+  <rect x="175" y="240" width="120" height="320" rx="6" fill="#4c6ef5"/>
+  <text x="235" y="228" font-size="22" font-weight="700" fill="#1a1a2e" text-anchor="middle">100%</text>
+  <text x="235" y="588" font-size="17" font-weight="600" fill="#3a3a4a" text-anchor="middle">Run A</text>
+  <text x="235" y="610" font-size="15" fill="#7a7a88" text-anchor="middle">one-shot</text>
+
+  <!-- Run C bar -->
+  <rect x="365" y="240" width="120" height="320" rx="6" fill="#7048e8"/>
+  <text x="425" y="228" font-size="22" font-weight="700" fill="#1a1a2e" text-anchor="middle">100%</text>
+  <text x="425" y="588" font-size="17" font-weight="600" fill="#3a3a4a" text-anchor="middle">Run C</text>
+  <text x="425" y="610" font-size="15" fill="#7a7a88" text-anchor="middle">/goal loop</text>
+
+  <text x="120" y="656" font-size="15" fill="#7a7a88">Both: 71 / 71 tests passing</text>
+
+  <!-- ================= RIGHT PANEL: Outer-loop iterations ================= -->
+  <text x="660" y="188" font-size="20" font-weight="700" fill="#1a1a2e">Outer-loop iterations fired</text>
+
+  <line x1="710" y1="560" x2="1130" y2="560" stroke="#d4d4dd" stroke-width="2"/>
+  <!-- turn-cap reference at 5 -->
+  <line x1="710" y1="272" x2="1130" y2="272" stroke="#e9967a" stroke-width="2" stroke-dasharray="7 6"/>
+  <text x="1130" y="264" font-size="14" fill="#c9663a" text-anchor="end">turn cap = 5</text>
+  <text x="694" y="566" font-size="14" fill="#9a9aa8" text-anchor="end">0</text>
+
+  <!-- scale: 5 turns -> 288px (y560 to y272), 1 turn = 57.6px -->
+  <!-- Run A: 0 iterations -> just a baseline marker -->
+  <line x1="765" y1="560" x2="885" y2="560" stroke="#4c6ef5" stroke-width="6"/>
+  <text x="825" y="540" font-size="22" font-weight="700" fill="#1a1a2e" text-anchor="middle">0</text>
+  <text x="825" y="588" font-size="17" font-weight="600" fill="#3a3a4a" text-anchor="middle">Run A</text>
+  <text x="825" y="610" font-size="15" fill="#7a7a88" text-anchor="middle">no outer loop</text>
+
+  <!-- Run C: 1 iteration -> height 57.6 from y560 -->
+  <rect x="955" y="502" width="120" height="58" rx="6" fill="#7048e8"/>
+  <text x="1015" y="490" font-size="22" font-weight="700" fill="#1a1a2e" text-anchor="middle">1</text>
+  <text x="1015" y="588" font-size="17" font-weight="600" fill="#3a3a4a" text-anchor="middle">Run C</text>
+  <text x="1015" y="610" font-size="15" fill="#7a7a88" text-anchor="middle">goal met on turn 1</text>
+
+  <text x="710" y="656" font-size="15" fill="#7a7a88">The evaluator cleared the goal after the first turn — 0 extra work</text>
+
+  <!-- divider -->
+  <line x1="600" y1="160" x2="600" y2="620" stroke="#ececf2" stroke-width="1"/>
+
+  <!-- footer -->
+  <text x="72" y="702" font-size="14" fill="#9a9aa8">Claude Code · Opus 4.8 · single case study (n=1 per method) · reproducible harness in repo</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="720" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="72" y="76" font-size="34" font-weight="700" fill="#1a1a2e">The loop&#8217;s overhead is 1.8% &#8212; loops aren&#8217;t expensive, extra turns are</text>
+  <text x="72" y="112" font-size="19" fill="#5a5a6e">Where the $1.97 of the goal-based run (Run C) actually went</text>
+
+  <!-- ============ Stacked horizontal bar: total cost = $1.976 ============ -->
+  <!-- scale: full width 1000px for $1.976, from x=100 to x=1100. 1$ = 506px -->
+  <!-- Opus 1.94 -> 981.6px ; Haiku 0.036 -> 18.2px -->
+
+  <text x="100" y="210" font-size="20" font-weight="700" fill="#1a1a2e">Cost by model</text>
+
+  <!-- bar -->
+  <rect x="100" y="240" width="982" height="96" rx="8" fill="#4c6ef5"/>
+  <rect x="1082" y="240" width="18" height="96" fill="#e8590c"/>
+  <!-- outline for the tiny slice emphasis -->
+  <rect x="1082" y="240" width="18" height="96" fill="none" stroke="#e8590c" stroke-width="1"/>
+
+  <!-- Opus label inside -->
+  <text x="140" y="284" font-size="22" font-weight="700" fill="#ffffff">Opus 4.8 &#8212; the work</text>
+  <text x="140" y="314" font-size="19" fill="#dfe6ff">$1.94  ·  98.2%</text>
+
+  <!-- Haiku callout -->
+  <line x1="1091" y1="240" x2="1091" y2="150" stroke="#e8590c" stroke-width="2"/>
+  <line x1="1091" y1="150" x2="900" y2="150" stroke="#e8590c" stroke-width="2"/>
+  <text x="892" y="140" font-size="18" font-weight="700" fill="#c9490c" text-anchor="end">Haiku 4.5 &#8212; the /goal evaluator</text>
+  <text x="892" y="164" font-size="17" fill="#a83e0c" text-anchor="end">$0.036  ·  1.8%  ·  the entire &#8220;loop tax&#8221;</text>
+
+  <!-- ============ Context strip: the real cost lever ============ -->
+  <text x="100" y="430" font-size="20" font-weight="700" fill="#1a1a2e">What a loop actually costs</text>
+
+  <rect x="100" y="456" width="1000" height="150" rx="12" fill="#f7f7fb"/>
+  <text x="132" y="502" font-size="21" font-weight="700" fill="#2a2a3a">cost of a loop  &#8776;  cost of one turn  &#215;  number of turns it forces</text>
+  <text x="132" y="540" font-size="17" fill="#5a5a6e">Run C forced <tspan font-weight="700" fill="#7048e8">0 extra turns</tspan>, so the goal-based run came in at <tspan font-weight="700" fill="#2a2a3a">$1.97 all-in</tspan></text>
+  <text x="132" y="568" font-size="17" fill="#5a5a6e">for a 1,046-line, 100%-correct API. The evaluator is cheap; runaway <tspan font-style="italic">iterations</tspan> are not.</text>
+  <text x="132" y="592" font-size="15" fill="#9a9aa8">845k of the tokens were cached reads — most of the bill is cheap cache, not fresh input.</text>
+
+  <!-- footer -->
+  <text x="72" y="690" font-size="14" fill="#9a9aa8">Source: Claude Code /usage breakdown, Run C · Opus 4.8 · reproducible harness in repo</text>
+</svg>

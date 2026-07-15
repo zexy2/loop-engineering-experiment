@@ -1,0 +1,8 @@
+{
+  "run": "reference_impl",
+  "timestamp": "2026-07-14T21:04:16Z",
+  "server_started": true,
+  "phase1": {"passed": 67, "failed": 0},
+  "phase2_ratelimit": {"passed": 4, "failed": 0},
+  "total": {"passed": 71, "failed": 0, "pass_rate_pct": 100.0}
+}
