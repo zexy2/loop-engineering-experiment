@@ -17,3 +17,6 @@ harness/.venv/
 
 # Server logs from scoring (regenerated)
 results/*-server.log
+
+# Personal Medium-paste scaffolding (kept local, not for the public repo)
+publish/
